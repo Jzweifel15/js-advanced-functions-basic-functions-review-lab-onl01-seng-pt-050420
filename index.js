@@ -29,5 +29,12 @@ function actionApplyer(startingInt, arrayOfFns)
   {
     return startingInt;
   }
-  return 
+  else
+  {
+    for (let i = 0; i < arrayOfFns.length; i++)
+    {
+      startingInt = arrayOfFns[i](startingInt);
+    }
+    return startingInt;
+  }
 }
